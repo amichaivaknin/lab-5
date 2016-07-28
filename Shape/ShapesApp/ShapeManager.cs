@@ -12,8 +12,16 @@ namespace ShapesApp
 {
     class ShapeManager
     {
+        /*
+        Really Great work! (as far as Lab 5.1 goes)
+        note the naming convention for fields: '_shapes'.
+        It is common to specify the access for each field method and property:
+        
+        End result:
+        'private ArrayList _shapes;''
+        */
         ArrayList Shapes;
-
+        
         public Shape this[int index] => (Shape) Shapes[index];
 
         public int Count => Shapes.Count;

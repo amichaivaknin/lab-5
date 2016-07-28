@@ -16,6 +16,10 @@ namespace ShapeLib
         protected double R1;
         protected double R2;
 
+        /*
+        * No input validation
+        * Refer to my notes regarding a DRY constructor in the Shape and Rectangle clases
+        */
         public Ellipse(int k1, int k2, ConsoleColor color) : base(color)
         {
             R1 = (double)k1/2;
@@ -25,10 +29,11 @@ namespace ShapeLib
             Also, consider using the constant Math.PI, which is more accurate than yours : 
             https://msdn.microsoft.com/en-us/library/system.math.pi(v=vs.110).aspx
             */
+            
             Area = 3.14*((double)k1/2)*((double)k2 /2);
         }
 
-        //Refer to my notes regarding DRY in the Shape and Rectangle clases
+        
         public Ellipse(int k1, int k2) : base()
         {
             R1 = (double)k1 / 2;

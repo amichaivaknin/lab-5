@@ -24,6 +24,9 @@ namespace ShapeLib
          
          * Consider avoiding protected properties, since it encourages better encapsulation between the base class and derived class.
          
+         *In your case, you are allowing derived classes to mutate the instance,
+         despite the fact that the code which created the instance probably specified the color he wishes to see in the constructor.
+         
          * Note that the naming convention for the private field would be '_color', with a lower-case 'c'.
       */
         protected ConsoleColor _Color { get; set; }

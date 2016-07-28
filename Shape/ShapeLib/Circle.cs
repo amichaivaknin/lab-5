@@ -17,6 +17,7 @@ namespace ShapeLib
         {
         }
 
+        //Same note as in all Shape derived classes
         public override void Display()
         {
             Console.BackgroundColor = _Color;

@@ -56,6 +56,13 @@ namespace ShapeLib
             sb.AppendLine("Ellipse : Width " + R1*2 + " Height " + R2*2);
         }
 
+        /**
+        You are duplicating code between Ellipse and Rectangle.
+        Consider refactoring to a single implementation of an extension method for the class Shape.
+        Each class (Ellipse and Rectangle) will just call the extension method on themselves.
+        This way you can re-use your code.
+        */
+        
         public int CompareTo(object obj)
         {
             Ellipse ellipse = (Ellipse) obj;
